@@ -17,6 +17,8 @@ function randomGradient(){
 
     document.body.style.background = gradient;
     h2.textContent = gradient;
+    input1.value = color1;
+    input2.value = color2;
 }
 
 h2.textContent = `background-image: linear-gradient(to right, ${input1.value}, ${input2.value})`;
