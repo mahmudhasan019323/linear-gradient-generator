@@ -11,8 +11,8 @@ function setGradient(){
 }
 
 function randomGradient(){
-    var color1 = "#"+((1<<24)*Math.random()|0).toString(16);
-    var color2 = "#"+((1<<24)*Math.random()|0).toString(16);
+    var color1 = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    var color2 = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     var gradient = `linear-gradient(to right, ${color1}, ${color2})`;
 
     document.body.style.background = gradient;
